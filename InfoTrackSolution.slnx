@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="SolicitorSearch.API/SolicitorSearch.API.csproj" />
+  <Project Path="SolicitorSearch.APP/SolicitorSearch.APP.csproj" />
+  <Project Path="SolicitorSearch.BLL/SolicitorSearch.BLL.csproj" />
+  <Project Path="SolicitorSearch.DAL/SolicitorSearch.DAL.csproj" />
+  <Project Path="SolicitorSearch.INF/SolicitorSearch.INF.csproj" />
+  <Project Path="SolicitorSearch.UI/SolicitorSearch.UI.csproj" Id="dbc35f0b-28e7-4ca0-8183-22090f64b7da" />
+</Solution>

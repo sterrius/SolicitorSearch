@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <div class="inline">
+        <label for="SelectedLocation">Location</label>
+        <select asp-for="SelectedLocation" asp-items="Model.LocationOptions" class="form-control" style="width:40%"></select>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+@{
+    if (Model.Solicitors.Count > 0)
+    {
+        <br />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Telephone Number</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var solicitor in Model.Solicitors)
+                {
+                    <tr>
+                        <td>@solicitor.SolicitorName</td>
+                        <td>@solicitor.TelephoneNumber</td>
+                        <td>@solicitor.Address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+<style>
+    .inline {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+</style>
